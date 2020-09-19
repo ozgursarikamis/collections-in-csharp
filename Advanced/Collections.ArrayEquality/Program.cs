@@ -19,6 +19,9 @@ namespace Collections.ArrayEquality
 
             System.Console.WriteLine($"hols1 == hols2 ?: { bankHols == bankHols2 }");
             System.Console.WriteLine(bankHols.SequenceEqual(bankHols2));
+
+            DateTime[] bankHols3 = bankHols;
+            System.Console.WriteLine($"hols1 == hols2 ?: { bankHols3 == bankHols }");
         }
     }
 }
