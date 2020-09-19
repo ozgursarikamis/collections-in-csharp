@@ -6,7 +6,21 @@ namespace Collections.Arrays
     {
         private static void Main()
         {
-            Console.WriteLine("Hello World!");
+            string[] days =
+            {
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            };
+
+            foreach (var day in days)
+            {
+                Console.WriteLine(day);
+            }
         }
     }
 }
