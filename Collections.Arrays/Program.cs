@@ -10,20 +10,19 @@ namespace Collections.Arrays
             {
                 "Monday",
                 "Tuesday",
-                "Wednesday",
+                "Weddddnesday",
                 "Thursday",
                 "Friday",
                 "Saturday",
                 "Sunday"
             };
 
-            Console.WriteLine("Which day do you want to display?");
-            Console.WriteLine("Monday = 1 etc... >>>");
+            days[2] = "Wednesday";
 
-            var iDay = int.Parse(Console.ReadLine() ?? string.Empty);
-
-            string chosenDay = days[iDay - 1];
-            Console.WriteLine($"The day is {chosenDay}");
+            foreach (var day in days)
+            {
+                Console.WriteLine(day);
+            }
         }
     }
 }
