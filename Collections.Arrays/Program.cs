@@ -17,20 +17,13 @@ namespace Collections.Arrays
                 "Sunday"
             };
 
-            foreach (var day in days)
-            {
-                Console.WriteLine(day);
-            }
+            Console.WriteLine("Which day do you want to display?");
+            Console.WriteLine("Monday = 1 etc... >>>");
 
-            var points = new[] {
-                new System.Drawing.Point(3, 5)
-            };
-            
-            // or:
-            System.Drawing.Point[] _points =
-            {
-                new System.Drawing.Point(3, 5)
-            };
+            var iDay = int.Parse(Console.ReadLine() ?? string.Empty);
+
+            string chosenDay = days[iDay];
+            Console.WriteLine($"The day is {chosenDay}");
         }
     }
 }
