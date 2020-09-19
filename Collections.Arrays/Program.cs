@@ -21,6 +21,16 @@ namespace Collections.Arrays
             {
                 Console.WriteLine(day);
             }
+
+            var points = new[] {
+                new System.Drawing.Point(3, 5)
+            };
+            
+            // or:
+            System.Drawing.Point[] _points =
+            {
+                new System.Drawing.Point(3, 5)
+            };
         }
     }
 }
