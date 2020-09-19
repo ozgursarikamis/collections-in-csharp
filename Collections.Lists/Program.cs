@@ -23,6 +23,9 @@ namespace Collections.Lists
             {
                 Console.WriteLine(country);
             }
+
+            var germanyIndex = countries.FindIndex(x => x == "Germany");
+            Console.WriteLine(germanyIndex);
         }
     }
 }
