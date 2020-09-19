@@ -19,6 +19,20 @@ namespace Collection.Dictionaries
             // Look up item in dictionary:
             var fin = countries["FIN"];
             Console.WriteLine(fin.Name);
+            Console.WriteLine();
+            foreach (KeyValuePair<string, Country> country in countries)
+            {
+                Console.WriteLine(country.Key);
+                Console.WriteLine(country.Value.Name);
+                Console.WriteLine();
+            }
+
+            foreach (var country in countries.Values)
+            {
+                Console.WriteLine();
+                Console.WriteLine(country.Code);
+                Console.WriteLine(country.Name);
+            }
         }
     }
 }
