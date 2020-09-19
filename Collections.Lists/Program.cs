@@ -25,6 +25,9 @@ namespace Collections.Lists
             }
 
             var germanyIndex = countries.FindIndex(x => x == "Germany");
+
+            // remove Germany:
+            countries.RemoveAt(germanyIndex);
             Console.WriteLine(germanyIndex);
         }
     }
