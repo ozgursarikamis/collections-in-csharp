@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections.Arrays", "Colle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections.Arrays.CountryPopulations", "Collections.Arrays.CountryPopulations\Collections.Arrays.CountryPopulations.csproj", "{70C4AB20-1794-4A8D-B27B-81EBD44D0C71}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Arrays", "01 Arrays", "{52392027-3F0C-4970-B417-DCAFDD823767}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Lists", "02 Lists", "{01D2FB0A-CB04-40AF-95A5-C0354CFE3451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections.Lists", "Collections.Lists\Collections.Lists.csproj", "{277F1DBC-4D77-45BE-9F46-98DC2B7136DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +50,22 @@ Global
 		{70C4AB20-1794-4A8D-B27B-81EBD44D0C71}.Release|x64.Build.0 = Release|Any CPU
 		{70C4AB20-1794-4A8D-B27B-81EBD44D0C71}.Release|x86.ActiveCfg = Release|Any CPU
 		{70C4AB20-1794-4A8D-B27B-81EBD44D0C71}.Release|x86.Build.0 = Release|Any CPU
+		{277F1DBC-4D77-45BE-9F46-98DC2B7136DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{277F1DBC-4D77-45BE-9F46-98DC2B7136DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{277F1DBC-4D77-45BE-9F46-98DC2B7136DA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{277F1DBC-4D77-45BE-9F46-98DC2B7136DA}.Debug|x64.Build.0 = Debug|Any CPU
+		{277F1DBC-4D77-45BE-9F46-98DC2B7136DA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{277F1DBC-4D77-45BE-9F46-98DC2B7136DA}.Debug|x86.Build.0 = Debug|Any CPU
+		{277F1DBC-4D77-45BE-9F46-98DC2B7136DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{277F1DBC-4D77-45BE-9F46-98DC2B7136DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{277F1DBC-4D77-45BE-9F46-98DC2B7136DA}.Release|x64.ActiveCfg = Release|Any CPU
+		{277F1DBC-4D77-45BE-9F46-98DC2B7136DA}.Release|x64.Build.0 = Release|Any CPU
+		{277F1DBC-4D77-45BE-9F46-98DC2B7136DA}.Release|x86.ActiveCfg = Release|Any CPU
+		{277F1DBC-4D77-45BE-9F46-98DC2B7136DA}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8BF6373-044C-4356-A7A3-4B7D61F892E0} = {52392027-3F0C-4970-B417-DCAFDD823767}
+		{70C4AB20-1794-4A8D-B27B-81EBD44D0C71} = {52392027-3F0C-4970-B417-DCAFDD823767}
+		{277F1DBC-4D77-45BE-9F46-98DC2B7136DA} = {01D2FB0A-CB04-40AF-95A5-C0354CFE3451}
 	EndGlobalSection
 EndGlobal
