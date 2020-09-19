@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Collections.ArrayEquality
 {
@@ -17,6 +18,7 @@ namespace Collections.ArrayEquality
             };
 
             System.Console.WriteLine($"hols1 == hols2 ?: { bankHols == bankHols2 }");
+            System.Console.WriteLine(bankHols.SequenceEqual(bankHols2));
         }
     }
 }
