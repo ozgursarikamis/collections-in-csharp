@@ -1,3 +1,5 @@
+using System.IO;
+
 namespace Collections.Arrays.CountryPopulations
 {
     public class CsvReader
@@ -12,6 +14,16 @@ namespace Collections.Arrays.CountryPopulations
         public Country[] ReadFirstNCountries(int nCountries)
         {
             Country[] countries = new Country[nCountries];
+            using (var streamReader = new StreamReader(_csvFilePath))
+            {
+                streamReader.ReadLine();
+
+                for (int i = 0; i < nCountries; i++)
+                {
+                    string csvLine = streamReader.ReadLine();
+                    countries[i] = ReadCountryFromCsvLine(csvLine);
+                }
+            }
             return countries;
         }
 

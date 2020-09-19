@@ -11,13 +11,14 @@ namespace Collections.Arrays.CountryPopulations
                 Path.Combine(
                     Environment.CurrentDirectory, "Pop by Largest Final.csv"));
             
-            CsvReader reader = new CsvReader(fileInfo.Name);
+            CsvReader reader = new CsvReader(fileInfo.FullName);
 
             Country[] countries = reader.ReadFirstNCountries(10);
 
             foreach (var country in countries)
             {
-                Console.WriteLine($"{PopulationFormatter.FormatPopulation(country.Population)}");
+                
+                Console.WriteLine($"{PopulationFormatter.FormatPopulation(country.Population).PadLeft(15)}");
             }
         }
     }
