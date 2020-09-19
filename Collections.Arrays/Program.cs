@@ -22,7 +22,7 @@ namespace Collections.Arrays
 
             var iDay = int.Parse(Console.ReadLine() ?? string.Empty);
 
-            string chosenDay = days[iDay];
+            string chosenDay = days[iDay - 1];
             Console.WriteLine($"The day is {chosenDay}");
         }
     }
